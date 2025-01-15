@@ -1,6 +1,3 @@
-Here’s the GitHub `README.md` file in a single code block:
-
-```markdown
 # Drone Delivery System
 
 This is a Solidity-based smart contract for managing a Drone Delivery System. The contract provides functionalities to add drones, rent drones, return drones, and check drone availability. It ensures drone state consistency using internal checks and emits events for key activities.
@@ -35,25 +32,17 @@ This is a Solidity-based smart contract for managing a Drone Delivery System. Th
    cd drone-delivery-system
    ```
 
-2. Install dependencies:
+Inside the project directory, in the terminal type:
+```npm i```
 
-   ```bash
-   npm install
-   ```
+Open two additional terminals in your VS code
 
-3. Compile the smart contract:
+In the second terminal type: ```npx hardhat node```
 
-   ```bash
-   npx hardhat compile
-   ```
+now in  third terminal, type: ```npx hardhat run --network localhost scripts/deploy.js```
 
-4. Deploy the contract:
+Again in the first terminal, type ```npm run dev``` , this will launch it in the front-end.
 
-   ```bash
-   npx hardhat run scripts/deploy.js --network <network-name>
-   ```
-
-   Replace `<network-name>` with your desired network.
 
 ## Smart Contract Methods
 
@@ -138,24 +127,6 @@ console.log(`Model: ${droneModel}, Available: ${!isRented}`);
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
-```
 
-You can copy and save this content as `README.md` in your GitHub repository. Let me know if you need further edits!
-Write the code and create .sol, deploy.js, and index.js file.
 
-Inside the project directory, in the terminal type:
-```npm i```
 
-Open two additional terminals in your VS code
-
-In the second terminal type: ```npx hardhat node```
-
-now in  third terminal, type: ```npx hardhat run --network localhost scripts/deploy.js```
-
-Again in the first terminal, type ```npm run dev``` , this will launch it in the front-end.
-
-Now click on localhost link shown in the terminal 
-Typically at http://localhost:3000/
-connect metamask wallet and perform the tasks.
-
-This was all about this project.
